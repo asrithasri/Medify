@@ -1,17 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
 :root {
-  /* Global variables to be defined here */
-  /* --color-white: #ffffff; */
-  --color-light-blue: rgba(42, 167, 255, 1);
-  --color-dark-blue: rgba(27, 60, 116, 1);
-  --color-light-gray: rgba(119, 130, 157, 1);
-  --font-primary: Poppins;
-  --font-Inter: Inter;
-  --font-Roboto: Roboto;
+  --color-white: #ffffff;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *,
 *::before,
@@ -64,7 +55,25 @@ h6 {
   isolation: isolate;
 }
 
-body {
-  background: linear-gradient(81deg, #d0e1ff 9.01%, rgba(232, 241, 255, 0.47) 89.11%) no-repeat;
-  font-family: var(--font-primary)
+/*Custom Pagination*/
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 28px;
+  padding-bottom:5px;
+}
+
+.swiper-pagination-bullet {
+  height: 10px;
+  width: 10px;
+  background: #BCD8E9;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #2AA7FF;
+  outline : 1px solid #2AA7FF;
+  outline-offset: 4px;
 }
